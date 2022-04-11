@@ -1,0 +1,28 @@
+.task-main{
+    margin: auto;
+    width: 60%;
+}
+
+.task-content{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.task-wrapper{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.task-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.icon i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding-left: 1rem;
+}
