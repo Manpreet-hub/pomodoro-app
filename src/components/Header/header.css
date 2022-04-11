@@ -1,0 +1,38 @@
+.nav {
+    width: 100%;
+    min-height: 5rem;
+    z-index: 2;
+    padding: 5px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-brand-name {
+    font-size: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  
+  .nav-option,
+  .btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+  } 
+  
+  .btn {
+    border: transparent;
+    background-color: transparent;
+  }
+  
+
+  
