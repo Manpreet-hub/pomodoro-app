@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { TaskDetailsProvider } from "./context/task-context";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TaskDetailsProvider>
+      <App />
+    </TaskDetailsProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
