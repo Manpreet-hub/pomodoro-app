@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 5rem;
     z-index: 2;
-    padding: 5px;
+    padding: 4px;
   }
   
   .header {
@@ -11,8 +11,8 @@
   }
   
   .navbar-brand-name {
-    font-size: 2rem;
-    margin-left: 1rem;
+    font-size: 2.2rem;
+    margin-left: 2rem;
     cursor: pointer;
   }
   
@@ -20,12 +20,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    margin-right: 4rem;
   }
   
   .nav-option,
   .btn {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
   } 
   
@@ -34,5 +34,6 @@
     background-color: transparent;
   }
   
+ 
 
   

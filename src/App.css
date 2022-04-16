@@ -6,13 +6,30 @@
   box-sizing: border-box;
 }
 
+:root{
+  --light-bg-color:#f1f0f0;
+  --dark-bg-color:#2c2c2c;
+  --txt-white-color:#ffffff;
+  --txt-black-color:#2c2c2c;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
-  background-color: #f1f0f0;
+  background-color: var(--light-bg-color);
+  }
+
+.dark-mode{
+  background-color: var(--dark-bg-color);
 }
+
+.dark-mode .dark-theme
+{
+  color: var(--txt-white-color);
+}
+
 
 li{
   list-style: none;
@@ -20,5 +37,5 @@ li{
 
 a{
   text-decoration: none;
-  color: black;
+  color: var(--txt-black-color);
 }
