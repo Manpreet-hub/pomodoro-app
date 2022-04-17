@@ -2,14 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { TaskDetailsProvider, ThemeProvider } from "./context/";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <TaskDetailsProvider>
-        <App />
-      </TaskDetailsProvider>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <TaskDetailsProvider>
+          <App />
+        </TaskDetailsProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
