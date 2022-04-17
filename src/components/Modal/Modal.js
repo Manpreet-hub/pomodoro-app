@@ -19,9 +19,9 @@ const Modal = () => {
   );
 
   const addTask = () => {
-    taskDetails.title && taskDetails.description
+    taskDetails.title && taskDetails.description && taskDetails.time
       ? taskDispatch({ type: "ADD_TASK", payload: taskDetails })
-      : alert("Task title and description are required");
+      : alert("Task title , time and description are required");
   };
 
   return (

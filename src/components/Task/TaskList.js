@@ -1,4 +1,5 @@
 import { useTask } from "../../context/task-context";
+import { Link } from "react-router-dom";
 
 const TaskList = () => {
   const { taskState, taskDispatch } = useTask();
@@ -8,7 +9,9 @@ const TaskList = () => {
       {taskState.taskList.map((task) => {
         return (
           <div className="task-container">
-            <h2>{task.title}</h2>
+            <Link to="/timer" state={{ task }}>
+              <h2>{task.title}</h2>
+            </Link>
             <div className="icon">
               <i
                 class="fa-regular fa-pen-to-square"
