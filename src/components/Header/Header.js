@@ -1,16 +1,25 @@
 import "./header.css";
-// import { Link } from "react-router-dom";
+import { BsMoonFill, BsSunFill } from "react-icons/bs";
+import { useTheme } from "../../context/";
 
 const Header = () => {
+  const { theme, setTheme } = useTheme();
   return (
     <nav className="nav">
       <div className="header">
         <div className="navbar-brand-name">
-          <h3>Timer</h3>
+          <h3 className="dark-theme">Timer</h3>
         </div>
         <div className="nav-icons">
           <button className="btn">
-            <i class="fa-solid fa-lightbulb"></i>
+            {theme ? (
+              <BsSunFill
+                className="dark-theme"
+                onClick={() => setTheme(false)}
+              />
+            ) : (
+              <BsMoonFill onClick={() => setTheme(true)} />
+            )}
           </button>
         </div>
       </div>

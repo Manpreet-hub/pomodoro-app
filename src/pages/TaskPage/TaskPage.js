@@ -9,8 +9,8 @@ const TaskPage = ({ task }) => {
 
   return (
     <div className="task-main">
-      <h1 className="task-title">Welcome back , Manpreet !</h1>
-      <div className="task-content">
+      <h1 className="task-title dark-theme">Welcome back , Manpreet !</h1>
+      <div className="task-content dark-theme">
         You have {taskState.taskList.length} tasks for today.All the best !!
       </div>
 

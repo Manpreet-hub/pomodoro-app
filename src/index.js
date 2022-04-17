@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { TaskDetailsProvider } from "./context/task-context";
+import { TaskDetailsProvider, ThemeProvider } from "./context/";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TaskDetailsProvider>
-      <App />
-    </TaskDetailsProvider>
+    <ThemeProvider>
+      <TaskDetailsProvider>
+        <App />
+      </TaskDetailsProvider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
