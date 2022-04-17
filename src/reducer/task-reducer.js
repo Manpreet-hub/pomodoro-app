@@ -1,8 +1,9 @@
 import { TOGGLE, ADD_TASK, EDIT_TASK, REMOVE_TASK } from "./task-actions";
+const taskDetailFromLocal = JSON.parse(localStorage.getItem("taskDetails"));
 
 const initialValue = {
   showModal: false,
-  taskList: [],
+  taskList: taskDetailFromLocal || [],
   taskEdit: {},
 };
 
