@@ -1,6 +1,6 @@
   # Timer Pomodoro App
 
-Timer is the simple Pomodoro app.It combines time with task Management to help you beat procrastination.
+Timer is the simple app based on Pomodoro technique and combines time with task Management.
 
 
 
